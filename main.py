@@ -34,11 +34,11 @@ def summarize(text, per):
     summary=''.join(final_summary)
     return summary
 
-url = 'https://www.britannica.com/plant/tree'
+url = 'https://www.sciencedaily.com/releases/2021/08/210811162816.htm'
 article = Article(url)
 article.download()
 article.parse()
 
-summarized_work = summarize(article.text, 0.85)
+summarized_work = summarize(article.text, 0.30)
 
 print(summarized_work)
